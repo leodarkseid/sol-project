@@ -1,4 +1,4 @@
-import { HardhatUserConfig } from "hardhat/config";
+import { HardhatUserConfig, task } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
 
 task("accounts", "prints the list of accounts", async (taskArgs, hre) => {
@@ -13,5 +13,5 @@ const config: HardhatUserConfig = {
   paths: { tests: "tests" },
   solidity: "0.8.17",
 };
-
+ 
 export default config;
