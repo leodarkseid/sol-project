@@ -6,6 +6,7 @@ task("accounts", "prints the list of accounts", async (taskArgs, hre) => {
 
   for (const account of accounts) {
     console.log(account.address);
+    console.log(await account.getBalance());
   }
 });
 
